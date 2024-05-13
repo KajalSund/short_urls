@@ -7,7 +7,7 @@ import uuid
 app = Flask(__name__)
 # Connect to MongoDB
 #client = MongoClient('mongodb://localhost:27017/')
-MONGO_URI = "mongodb+srv://kajalsund9:SXzizCoCxv5OBm91@cluster0.gmrg5ha.mongodb.net/url_hashing?ssl=true&ssl_cert_reqs=CERT_NONE"
+MONGO_URI = "mongodb+srv://kajalsund9:SXzizCoCxv5OBm91@cluster0.gmrg5ha.mongodb.net/url_hashing?ssl=true&tlsAllowInvalidCertificates=false"
 client = MongoClient(MONGO_URI)
 db = client['url_hashing']
 
